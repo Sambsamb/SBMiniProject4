@@ -9,6 +9,14 @@
 >
 >11/6/2022
 >
+```python
+python manage.py runserver
+```
+To change the port:
+```python 
+python manage.py runserver 8080
+```
+
 
 
 
