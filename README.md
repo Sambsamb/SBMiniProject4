@@ -20,7 +20,15 @@ To setup the DB:
 ```python
 python manage.py migrate
 ```
-
+After setting up the Database Models in models.py:
+```python
+python manage.py makemigrations
+python manage.py migrate
+```
+Create Admin:
+```python
+python manage.py createsuperuser
+```
 
 
 
