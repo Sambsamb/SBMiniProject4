@@ -16,6 +16,10 @@ To change the port:
 ```python 
 python manage.py runserver 8080
 ```
+To setup the DB:
+```python
+python manage.py migrate
+```
 
 
 
