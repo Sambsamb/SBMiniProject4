@@ -32,7 +32,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'bakers_recipe_exchange'
+    'bakers_recipe_exchange',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [
