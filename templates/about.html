@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 card mb-4  mt-3 left  top">
+      <div class="card-body">
+        <h1>About Us</h1>
+        <p class="card-text ">As you can tell, I love baking, well I really, really, really love baking!
+            It’s a passion I have since childhood. I’ve been baking for over 25 years for kids' school events,
+            the local fire house, and my friends at the hospital where I work as a labor and delivery nurse.</p>
+        <p class="card-text">I started Baker Recipes to share some of my favorite baking recipes with you.
+            Whether you are a home novice baker or a professional master baker, my goal is to inspire you with
+            easy-to-make baking recipes from Desserts to Bread and more. So are you ready to start baking?
+            I am! Let’s do it together and if you have any questions along the way just send me a message
+            and I’ll do my best to respond.</p>
+          <p class="card-text">This site is open for anyone to contibute and share their favorite recipes!</p>
+
+      </div>
+    </div>
+    {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+  </div>
+</div>
+
+{% endblock content %}
