@@ -8,7 +8,6 @@ FHSU - Fall 2022
 """
 
 from django.views import generic
-from django.views.generic import TemplateView
 from .models import Post
 
 
@@ -22,5 +21,5 @@ class PostDetail(generic.DetailView):
     template_name = 'post_detail.html'
 
 
-class AboutPageView(TemplateView):
+class AboutPageView(generic.TemplateView):
     template_name = 'about.html'
