@@ -12,6 +12,6 @@ from django.urls import path
 
 urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
-    path('<slug:slug>/', views.PostDetail.as_view(), name='post-detail'),
-    path('about/', views.AboutPageView.as_view(), name='about'),
+    path('about/', views.AboutPageView.as_view(), name='about'),  # order matters!!??
+    path('<slug:slug>/', views.PostDetail.as_view(), name='post-detail'),  # Needs to be last - no idea why
 ]
