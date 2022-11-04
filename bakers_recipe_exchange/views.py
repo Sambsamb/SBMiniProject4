@@ -66,3 +66,7 @@ class PostDetail(generic.DetailView):
 
 class AboutPageView(generic.TemplateView):
     template_name = 'about.html'
+
+
+class PolicyPageView(generic.TemplateView):
+    template_name = 'policy.html'

@@ -12,7 +12,8 @@ from django.urls import path
 
 urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
-    path('about/', views.AboutPageView.as_view(), name='about'),  # order matters!!??
+    path('policy/', views.PolicyPageView.as_view(), name='policy'),
+    path('about/', views.AboutPageView.as_view(), name='about'),
     path('login/', views.login_request, name='login'),
     path('logout/', views.logout_request, name='logout'),
     path('register/', views.register_request, name='register'),
