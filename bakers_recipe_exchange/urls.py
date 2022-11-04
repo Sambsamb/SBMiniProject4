@@ -9,8 +9,10 @@ FHSU - Fall 2022
 
 from . import views
 from django.urls import path
+from .views import AboutPageView
 
 urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
     path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
+    path('about/', AboutPageView.as_view(), name='about'),
 ]
