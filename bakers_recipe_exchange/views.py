@@ -8,7 +8,7 @@ FHSU - Fall 2022
 """
 
 from .models import Post
-from .forms import NewUserForm
+from .forms import NewUserForm, BlogForm
 from django.views import generic
 from django.shortcuts import render, redirect
 from django.contrib import messages
@@ -70,3 +70,16 @@ class AboutPageView(generic.TemplateView):
 
 class PolicyPageView(generic.TemplateView):
     template_name = 'policy.html'
+
+
+def create_post(request):
+    if request.method == 'POST':
+        form = BlogForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)
+            messages.success(request, 'Registration successful.')
+            return redirect('home')
+        messages.error(request, 'Unsuccessful registration. Invalid information.')
+    form = BlogForm()
+    return render(request=request, template_name='create_post.html', context={'create_post': form})
