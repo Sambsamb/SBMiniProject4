@@ -9,6 +9,7 @@
 >
 >11/6/2022
 >
+To run server:
 ```python
 python manage.py runserver
 ```

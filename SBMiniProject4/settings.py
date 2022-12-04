@@ -93,4 +93,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = os.environ['DEBUG']
-ALLOWED_HOSTS = ['127.0.0.1', '.azurewebsites.net']  # os.environ['ALLOWED_HOSTS']
+ALLOWED_HOSTS = ['.azurewebsites.net']  # os.environ['ALLOWED_HOSTS']
