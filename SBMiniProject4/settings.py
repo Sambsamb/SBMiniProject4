@@ -95,3 +95,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = os.environ['DEBUG']
 ALLOWED_HOSTS = ['.azurewebsites.net']  # os.environ['ALLOWED_HOSTS']
+CSRF_TRUSTED_ORIGINS = ['https://recipe601a.azurewebsites.net']  # list(os.environ['CSRF_TRUSTED_ORIGINS'])
